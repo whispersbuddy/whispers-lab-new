@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: "Geist", "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "JetBrains Mono", Menlo, monospace;
+  
+  --animate-blink: blink 1s step-end infinite;
+  
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #faf9f9;
+  color: #111111;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #faf9f9;
+}
+
+/* Custom animated gradient backgrounds if needed */
+.cta-gradient {
+  background: linear-gradient(135deg, #7c3aed 0%, #0ea5e9 100%);
+}
+
+.transparent-border {
+  border: 1px solid rgba(17, 17, 17, 0.09);
+}
+
+.pulsing-dot {
+  animation: pulse-animation 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-animation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* For beautiful custom transitions */
+.faq-content-transition {
+  transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Custom Typography Scale for Redesign */
+.font-titan {
+  font-size: clamp(64px, 8vw, 110px);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.font-display-scale {
+  font-size: clamp(42px, 5vw, 72px);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+}
+
+.font-statement {
+  font-size: clamp(28px, 3vw, 44px);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.font-label-scale {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #999;
+}
+
+.font-body-text {
+  font-size: 17px;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.75;
+  color: #555;
+}
+
+/* Editorial Slow-scrolling Marquee */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: marquee-anim 45s linear infinite;
+}
+
+@keyframes marquee-anim {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+

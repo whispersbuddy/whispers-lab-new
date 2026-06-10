@@ -1,0 +1,6 @@
+{
+  "name": "Whispers Lab",
+  "description": "A premium SaaS MVP & AI Automation studio homepage with stateful interactive previews, animated case studies, and a technical editorial design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
