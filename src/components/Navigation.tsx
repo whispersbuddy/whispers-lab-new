@@ -81,7 +81,7 @@ export default function Navigation() {
       <div className="max-w-[1280px] h-16 mx-auto px-6 md:px-16 flex items-center justify-between">
         {/* Left - Logo */}
         <a href="#" id="nav-logo" className="flex items-center gap-2 group">
-          <WhispersLogo variant="colorful" />
+          <WhispersLogo variant="colorful" size="lg" />
         </a>
 
         {/* Center - Links (Desktop) */}
