@@ -38,7 +38,7 @@ export default function Testimonials() {
             </h2>
           </div>
           <p className="font-mono text-[11px] text-gray-400 max-w-[200px] leading-relaxed md:text-right">
-            via Upwork profiles labeled accordingly
+            via verified client profiles accordingly
           </p>
         </div>
 
@@ -74,8 +74,8 @@ export default function Testimonials() {
                       {item.meta}
                     </p>
                   </div>
-                  <span className="font-mono text-[9px] text-gray-400 bg-[#faf9f9] border border-gray-200 rounded px-2.5 py-1 flex-shrink-0">
-                    Upwork
+                  <span className="font-mono text-[9px] text-[#7c3aed] bg-[#7c3aed]/5 border border-[#7c3aed]/10 rounded px-2.5 py-1 flex-shrink-0 font-bold">
+                    Verified
                   </span>
                 </div>
               </div>

@@ -203,7 +203,7 @@ export default function AIIntegrationServicePage({ handleNavigateHome }: AIInteg
                 marginBottom: 24,
                 textTransform: 'uppercase'
               }}>
-                YoY demand for AI integration on Upwork · 2024
+                YoY demand for AI integration globally · 2024
               </div>
               <p style={{
                 fontFamily: 'var(--font-sans)',

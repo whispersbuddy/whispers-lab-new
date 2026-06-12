@@ -73,16 +73,14 @@ export default function Footer() {
           </div>
           <div className="space-y-3.5">
             {[
-              { label: 'Work', href: '#scoping-booking' },
+              { label: 'Work', href: '#work' },
               { label: 'About', href: '#scoping-booking' },
               { label: 'Blog', href: '#scoping-booking' },
-              { label: 'Contact', href: '#scoping-booking', isBooking: true },
-              { label: 'Upwork Profile ↗', href: '#' },
+              { label: 'Contact', href: '#contact' },
             ].map(link => (
               <a 
                 key={link.label} 
                 href={link.href} 
-                onClick={link.isBooking ? handleScrollToBooking : undefined}
                 className="block font-sans text-sm font-light text-[#555555] hover:text-black hover:font-normal transition-all"
               >
                 {link.label}
@@ -112,7 +110,7 @@ export default function Footer() {
 
           {/* Trust line */}
           <div className="font-mono text-[10px] text-gray-400 font-medium">
-            Top Rated on Upwork · Since 2021
+            Since 2021 · 100% Client Satisfaction Guaranteed
           </div>
         </div>
       </div>

@@ -24,10 +24,12 @@ import AIIntegrationServicePage from "./components/AIIntegrationServicePage";
 import GHLServicePage from "./components/GHLServicePage";
 import N8NServicePage from "./components/N8NServicePage";
 import ShopifySpeedServicePage from "./components/ShopifySpeedServicePage";
+import ContactPage from "./components/ContactPage";
+import WorkPage from "./components/WorkPage";
 import { useScrollAnimations } from "./hooks/useScrollAnimations";
 
 export default function App() {
-  const [currentView, setCurrentView] = useState<"home" | "automation" | "saas-mvp" | "ecommerce" | "ai-integration" | "ghl-setup" | "n8n-automation" | "shopify-speed">("home");
+  const [currentView, setCurrentView] = useState<"home" | "automation" | "saas-mvp" | "ecommerce" | "ai-integration" | "ghl-setup" | "n8n-automation" | "shopify-speed" | "contact" | "work">("home");
 
   // Load premium scroll animations globally
   useScrollAnimations();
@@ -63,6 +65,12 @@ export default function App() {
         window.scrollTo({ top: 0, behavior: "instant" });
       } else if (window.location.hash === "#services/ecommerce") {
         setCurrentView("ecommerce");
+        window.scrollTo({ top: 0, behavior: "instant" });
+      } else if (window.location.hash.startsWith("#work") || window.location.pathname === "/work") {
+        setCurrentView("work");
+        window.scrollTo({ top: 0, behavior: "instant" });
+      } else if (window.location.hash === "#contact" || window.location.pathname === "/contact") {
+        setCurrentView("contact");
         window.scrollTo({ top: 0, behavior: "instant" });
       } else {
         setCurrentView("home");
@@ -109,6 +117,10 @@ export default function App() {
         <AIIntegrationServicePage handleNavigateHome={handleReturnHome} />
       ) : currentView === "shopify-speed" ? (
         <ShopifySpeedServicePage handleNavigateHome={handleReturnHome} />
+      ) : currentView === "contact" ? (
+        <ContactPage handleNavigateHome={handleReturnHome} />
+      ) : currentView === "work" ? (
+        <WorkPage handleNavigateHome={handleReturnHome} />
       ) : (
         <EcommerceServicePage handleNavigateHome={handleReturnHome} />
       )}

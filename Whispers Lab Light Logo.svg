@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50" fill="none">
+  <defs>
+    <linearGradient id="lightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Brand Icon -->
+  <g transform="translate(10, 10)">
+    <path d="M15 2 L28 15 L15 28 L2 15 Z" stroke="url(#lightGrad)" stroke-width="2.5" stroke-linejoin="round" />
+    <path d="M15 7 L23 15 L15 23 L7 15 Z" stroke="url(#lightGrad)" stroke-width="1.5" stroke-linejoin="round" opacity="0.7" />
+    <circle cx="15" cy="15" r="3" fill="url(#lightGrad)" />
+  </g>
+
+  <!-- Typography -->
+  <text x="52" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="20" fill="#111111" letter-spacing="-0.03em">Whispers<tspan font-weight="300" fill="#71717a">Lab</tspan></text>
+</svg>

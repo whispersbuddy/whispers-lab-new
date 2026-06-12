@@ -139,7 +139,7 @@ export default function Navigation() {
                         Need custom engineering? We build tailored, production-ready full-stack tools.
                       </p>
                       <a
-                        href="#cta"
+                        href="#contact"
                         onClick={() => setIsMegaOpen(false)}
                         className="font-mono text-[9px] font-bold uppercase tracking-widest text-[#7c3aed] flex items-center gap-1 hover:underline"
                       >
@@ -193,7 +193,7 @@ export default function Navigation() {
                         Standard timeframe: 2&ndash;4 weeks from kickoff
                       </span>
                       <a
-                        href="#cta"
+                        href="#contact"
                         onClick={() => setIsMegaOpen(false)}
                         className="text-[#7c3aed] hover:underline font-bold font-mono text-[9px] uppercase tracking-widest flex items-center gap-1.5"
                       >
@@ -222,7 +222,7 @@ export default function Navigation() {
         <div className="hidden md:block">
           <a
             id="desktop-briefing-cta"
-            href="#cta"
+            href="#contact"
             className="inline-block bg-[#111111] hover:bg-neutral-800 hover:shadow-md hover:scale-[1.01] active:scale-[0.98] text-white font-mono text-[13px] font-medium leading-none px-5 py-3 rounded-lg transition-all text-center"
           >
             Book briefing call
@@ -293,7 +293,7 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="#cta"
+            href="#contact"
             onClick={() => setIsOpen(false)}
             className="block w-full bg-[#111111] hover:bg-neutral-800 text-white text-center font-mono text-sm font-medium py-3 rounded-lg mt-2"
           >
